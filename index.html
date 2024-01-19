@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prueba UIKIT</title>
+  <link rel="stylesheet" href="node_modules\uikit\dist\css\uikit.min.css" />
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <div class="uk-container">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+      <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo uk-text-primary" href="#">Nav</a>
+      </div>
+      <div class="uk-navbar-right">
+        <ul class="uk-navbar-nav">
+          <li><a href="#">Lorem</a></li>
+          <li><a href="#">Ipsum</a></li>
+          <li><a href="#">Dolor</a></li>
+          <li><a href="#">Sit</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Sección de Bienvenida -->
+  <div class="uk-section uk-section-large uk-flex uk-flex-middle uk-text-center"
+    style="background-image: url('images/dark.jpg')">
+    <div class="uk-width-1-1">
+      <h1 class="uk-heading-primary uk-margin-remove-bottom uk-text-primary">Lorem Ipsum</h1>
+      <p class="uk-text-lead uk-margin-remove-top uk-text-primary">dolor sit amet.</p>
+      <a class="uk-button uk-button-primary uk-margin-top" href="#caracteristicas">Explora Más</a>
+    </div>
+  </div>
+
+  <!-- Sección de Características -->
+  <div id="caracteristicas" class="uk-section uk-section-muted">
+    <div class="uk-container">
+      <h2 class="uk-heading-divider">Cards</h2>
+      <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <h3 class="uk-card-title">Lorem, ipsum dolor.</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Galería -->
+  <div class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-divider">Slide</h2>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>1</h1></div>
+            </li>
+            <li>
+                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>2</h1></div>
+            </li>
+            <li>
+                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>3</h1></div>
+            </li>
+            <li>
+                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>4</h1></div>
+            </li>
+            <li>
+                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>5</h1></div>
+            </li>
+            <li>
+                <img src="images/slider1.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>6</h1></div>
+            </li>
+            <li>
+                <img src="images/slider2.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>7</h1></div>
+            </li>
+            <li>
+                <img src="images/slider3.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>8</h1></div>
+            </li>
+            <li>
+                <img src="images/slider4.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>9</h1></div>
+            </li>
+            <li>
+                <img src="images/slider5.jpg" width="400" height="600" alt="">
+                <div class="uk-position-center uk-panel"><h1>10</h1></div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+    </div>
+  </div>
+  <!-- Sección de Comentarios -->
+  <div class="uk-section">
+    <div class="uk-container">
+      <h2 class="uk-heading-divider">Accordion</h2>
+      <div uk-accordion>
+        <div>
+          <h3 class="uk-accordion-title">Usuario 1</h3>
+          <div class="uk-accordion-content">
+            <article class="uk-comment" role="comment">
+              <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="images/avatar.png" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Comment</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                      <li><a href="#">12 days ago</a></li>
+                      <li><a href="#">Reply</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h3 class="uk-accordion-title">Usuario 2</h3>
+          <div class="uk-accordion-content">
+            <article class="uk-comment" role="comment">
+              <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="images/avatar.png" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Comment</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                      <li><a href="#">12 days ago</a></li>
+                      <li><a href="#">Reply</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div>
+          <h3 class="uk-accordion-title">Usuario 3</h3>
+          <div class="uk-accordion-content"> 
+            <article class="uk-comment" role="comment">
+              <header class="uk-comment-header">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                  <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="images/avatar.png" width="80" height="80" alt="">
+                  </div>
+                  <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Comment</a></h4>
+                    <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
+                      <li><a href="#">12 days ago</a></li>
+                      <li><a href="#">Reply</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </header>
+              <div class="uk-comment-body">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                  et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sección de Contacto -->
+  <div class="uk-section uk-section-primary">
+    <div class="uk-container">
+      <h2 class="uk-heading-divider uk-light">Form</h2>
+      <form class="uk-form-stacked">
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-light" for="nombre">Nombre:</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="nombre" type="text" placeholder="Tu Nombre" />
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-light" for="email">Correo Electrónico:</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" id="email" type="email" placeholder="tucorreo@example.com" />
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label class="uk-form-label uk-text-light" for="mensaje">Mensaje:</label>
+          <div class="uk-form-controls">
+            <textarea class="uk-textarea" id="mensaje" rows="5" placeholder="Tu mensaje"></textarea>
+          </div>
+        </div>
+        <button class="uk-button uk-button-default uk-margin-top" type="submit">
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Pie de Página -->
+  <div class="uk-section uk-section-secondary uk-light">
+    <div class="uk-container">
+      <p>&copy;Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    </div>
+  </div>
+  <script src="node_modules\uikit\dist\js\uikit.min.js"></script>
+</body>
+
+</html>
